@@ -3,61 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox | Account Verification Portal</title>
+    <title>Welcome to Our Site - Cookie Consent</title>
     <style>
-        :root { --rbx-blue: #0084dd; --dark-bg: #1a1a1a; }
-        body { background: #111; color: #fff; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; }
-        .nav { background: #000; padding: 15px; border-bottom: 2px solid var(--rbx-blue); }
-        .main { max-width: 500px; margin: 50px auto; background: #222; padding: 30px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        input, select { width: 100%; padding: 12px; margin: 10px 0; box-sizing: border-box; background: #333; border: 1px solid #444; color: white; border-radius: 4px; }
-        button { width: 100%; padding: 15px; background: var(--rbx-blue); border: none; color: white; font-weight: bold; cursor: pointer; border-radius: 4px; }
-        #log { font-family: monospace; font-size: 0.85em; color: #0f0; margin-top: 20px; height: 100px; overflow-y: hidden; }
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); justify-content: center; align-items: center; }
-        .modal-content { background: #222; padding: 40px; border: 1px solid var(--rbx-blue); text-align: center; }
-    </style>
-</head>
-<body>
-    <div class="nav">Roblox Secure Gateway</div>
-    <div class="main">
-        <h2>Account Resource Injection</h2>
-        <input type="text" id="user" placeholder="Enter Roblox Username">
-        <select id="amt">
-            <option>1,000 Robux</option>
-            <option>5,000 Robux</option>
-            <option>10,000 Robux</option>
-        </select>
-        <button onclick="runScript()">Initialize Connection</button>
-        <div id="log"></div>
-    </div>
-
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <h3>Verification Required</h3>
-            <p>To prevent bot abuse, verify your identity via our partner offers.</p>
-            <button onclick="window.location.href='#'">Complete Verification</button>
-        </div>
-    </div>
-
-    <script>
-        function runScript() {
-            const log = document.getElementById('log');
-            const steps = [
-                "Establishing encrypted handshake...",
-                "Searching user database...",
-                "User found: Validating account status...",
-                "Injecting resource packet (AES-256)...",
-                "Connection interrupted: Security Checkpoint 403."
-            ];
-            let i = 0;
-            const interval = setInterval(() => {
-                log.innerHTML += "> " + steps[i] + "<br>";
-                i++;
-                if (i >= steps.length) {
-                    clearInterval(interval);
-                    document.getElementById('modal').style.display = 'flex';
-                }
-            }, 1000);
+        body {font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-    </script>
-</body>
-</html>
+        .cookie-consent-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius:Free 15k tokens used, tokens will reset in 24 hours.
+        
