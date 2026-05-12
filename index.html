@@ -1,40 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Our Site - Cookie Consent</title>
+    <title>Roblox Hry a Tipy</title>
     <style>
-        body {font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #ff3366, #6633ff);
             min-height: 100vh;
+            color: white;
+            padding-top: 80px;
         }
-        .cookie-consent-container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+        
+        .cookie-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #ffcc00;
+            padding: 15px;
             text-align: center;
+            z-index: 1000;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            border-bottom: 3px solid #ff9900;
         }
-        h2 {
+        
+        .cookie-popup h3 {
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
         }
-        p {
+        
+        .cookie-popup p {
             color: #666;
-            line-height: 1.6;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
+            font-size: 14px;
         }
-        button {
-            background-color: #007bff;
+        
+        .cookie-btn {
+            background: #ff3366;
             color: white;
             border: none;
-            padding: 12px 25px;
-            border-radius:Free 15k tokens used, tokens will reset in 24 hours.
+            padding: 10px 25px;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
         
+        .cookie-btn:hover {
+            background: #ff0044;
+            transform: scale(1.05);
+        }
+        
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .hero-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 0 #000;
+        }
+        
+        .hero-subtitle {
+            font-size: 24px;
+            margin-bottom: 40px;
+            color: #ffcc00;
+        }
+        
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .game-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 20px;
+            border: 2px solid #ffcc00;
+            transition: transform 0.3s;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .game-card h3 {
+            color: #ffcc00;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        .game-card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .game-image {
+            width: 100%;
+            height: 180px;
+            background: linear-gradient(45deg, #33ff66, #3366ff);
+            border-radius: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .success {
+            background: #33ff66;
+            color: #000;
+        }
+        
+        .error {
+            background: #ff3366;
+            color: white;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="cookie-popup" id="cookiePopup">
+        <h3>🍪 Cookies pro Roblox hry!</h3>
+        <p>Abychom vám mohli ukázat nejlepší Roblox hry a tipy, potřebujeme vaše cookies. Klikni "Přijmout" a získáš super bonusy!</p>
+        <button class="cookie-btn" id="acceptBtn">Přijmout cookies a získat bonusy!</button>
+        <div id="cookieMessage" class="message hidden"></div>
+    </div>
+
+    <div class="main-content">
+        <div class="hero-section">
+            <h1 class="hero-title">🤩 SVĚT ROBLOX HRY! 🤩</h1>
+            <p class="hero-subtitle">Nejlepší tipy, hacky a tajné triky pro Roblox!</p>
+            
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-image">🎮 ADOPT ME!</div>
+                    <h3>Jak získat drahé pets zdarma!</h3>
+                    <p>Tajný trik: Stačí kliknout 3x na menu a dostaneš legendar pet!</p>
+                </div>
+                
+                <div class
+                    
